@@ -12,6 +12,7 @@
 
    <!-- jQuery library -->
    <script src="assets/js/jquery.min.js"></script>
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
    <!-- Popper JS -->
    <script src="assets/js/popper.min.js"></script>
@@ -19,6 +20,7 @@
    <!-- Bootstrap JavaScript -->
    <script src="assets/js/bootstrap.min.js"></script>
    <script src="assets/js/x3dom.js"></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
    <link rel="stylesheet" type="text/css" href="assets/css/x3dom.css">
 
    <!-- CSS style -->
@@ -31,6 +33,9 @@
        <a class="navbar-brand" href="index.php">
          <span class="handwritten-font">Coca Cola</span>
        </a>
+       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+       </button>
        <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
          <ul class="navbar-nav">
            <li class="nav-item">
@@ -56,6 +61,7 @@
        </div>
      </div>
    </nav>
+
    
  
    
