@@ -1,0 +1,103 @@
+     .navbar {
+       font-size: 20px; /* 调整导航栏字体大小 */
+     }
+
+     .handwritten-font {
+       font-family: "Brush Script MT", cursive; /* 使用Brush Script MT字体样式 */
+       font-size: 35px; /* 增大Coca Cola字体大小 */
+     }
+
+     .navbar-nav .nav-link:not(.handwritten-font) {
+       margin-right: 20px; /* 增大其他链接之间的间距 */
+     }
+
+     #background_image {
+       background-image: url('assets/images/background.jpg');
+       background-size: contain;
+       background-repeat: no-repeat;
+       background-position: center;
+       width: 100%;
+       height: 600px; /* 调整显示区域的高度，可以根据需要进行调整 */
+     }
+
+     #main_text {
+       display: flex;
+       flex-direction: column;
+       align-items: flex-start;
+       justify-content: center;
+       height: 100%;
+       font-family: Garamond, serif;
+       font-size: 24px;
+       padding-left: 50px; /* 向右偏移一段距离，根据需要进行调整 */
+     }
+
+     /* Footer */
+     #dibu ul {
+       padding-left: 0;
+       list-style: none;
+     }
+
+     #dibu li {
+       margin-bottom: 10px;
+     }
+
+     #dibu a {
+       color: #fff;
+       transition: color 0.2s, text-decoration 0.2s;
+       text-decoration: none;
+     }
+
+     #dibu a:hover {
+       color: #007bff;
+       text-decoration: underline;
+     }
+
+     #dibu h5 {
+       color: #fff;
+       margin-top: 0;
+       margin-bottom: 20px;
+       font-weight: 600;
+       font-size: 18px;
+     }
+
+     #dibu p {
+       font-size: 16px;
+       margin-bottom: 0;
+       line-height: 1.5;
+       color: #fff;
+     }
+
+     #dibu .text-center {
+       text-align: center;
+     }
+
+     #dibu .mt-5 {
+       margin-top: 3rem !important;
+     }
+
+     #dibu .py-4 {
+       padding-top: 1.5rem !important;
+       padding-bottom: 1.5rem !important;
+     }
+
+     #dibu .bg-primary {
+       background-color: #007bff !important;
+     }
+
+     #dibu .bg-dark {
+       background-color: #343a40 !important;
+     }
+
+     #dibu .list-inline {
+       padding-left: 0;
+       list-style: none;
+       margin-left: 5px;
+     }
+
+     #dibu .list-inline-item {
+       display: inline-block;
+     }
+
+     #dibu .list-inline-item:not(:last-child) {
+       margin-right: 0.5rem;
+     }

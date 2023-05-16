@@ -18,38 +18,42 @@
 
    <!-- Bootstrap JavaScript -->
    <script src="assets/js/bootstrap.min.js"></script>
-<script src="assets/js/x3dom.js"></script>
+   <script src="assets/js/x3dom.js"></script>
    <link rel="stylesheet" type="text/css" href="assets/css/x3dom.css">
+
+   <!-- CSS style -->
+   <link rel="stylesheet" href="assets/style/style.css">
 </head>
 <body >
 
-   <nav class="navbar navbar-expand-md navbar-dark " id="toubu" style="background-color:black">
-     <a class="navbar-brand" href="index.php">Coca Cola</a>
-     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-       <span class="navbar-toggler-icon"></span>
-     </button>
-     <div class="collapse navbar-collapse" id="navbarNavDropdown">
-       <ul class="navbar-nav ml-auto">
-         <li class="nav-item">
-           <a class="nav-link" href="index.php">Home</a>
-         </li>
-         <li class="nav-item dropdown">
-           <a class="nav-link dropdown-toggle" href="javascript::" onclick="tan()" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Drink
-           </a>
-           <div class="dropdown-menu"  id="drink" style="display:none">
-             <a class="dropdown-item" href="javascript::" onclick="kele()">Coca Cola</a>
-             <a class="dropdown-item" href="javascript::" onclick="xuebi()">Sprite</a>
-             <a class="dropdown-item" href="javascript::" onclick="boshi()">Dr Pepper</a>
-           </div>
-         </li>
-         <li class="nav-item">
-           <a class="nav-link" href="javascript::" onclick="shengming()">Originality Statement</a>
-         </li>
-         <li class="nav-item">
-           <a class="nav-link" href="javascript::" data-toggle="modal" data-target="#contactModal" onclick="contact()">Contact</a>
-         </li>
-       </ul>
+   <nav class="navbar navbar-expand-md navbar-dark bg-black" id="toubu">
+     <div class="container">
+       <a class="navbar-brand" href="index.php">
+         <span class="handwritten-font">Coca Cola</span>
+       </a>
+       <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+         <ul class="navbar-nav">
+           <li class="nav-item">
+             <a class="nav-link" href="index.php">Home</a>
+           </li>
+           <li class="nav-item dropdown">
+             <a class="nav-link dropdown-toggle" href="javascript::" onclick="tan()" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+               Drink
+             </a>
+             <div class="dropdown-menu" id="drink" style="display:none">
+               <a class="dropdown-item" href="javascript::" onclick="kele()">Coca Cola</a>
+               <a class="dropdown-item" href="javascript::" onclick="xuebi()">Sprite</a>
+               <a class="dropdown-item" href="javascript::" onclick="boshi()">Dr Pepper</a>
+             </div>
+           </li>
+           <li class="nav-item">
+             <a class="nav-link" href="javascript::" onclick="shengming()">Originality Statement</a>
+           </li>
+           <li class="nav-item">
+             <a class="nav-link" href="javascript::" data-toggle="modal" data-target="#contactModal" onclick="contact()">Contact</a>
+           </li>
+         </ul>
+       </div>
      </div>
    </nav>
    
@@ -58,22 +62,20 @@
 <div id="dise" style="">
    <!-- Main Text -->
    
-<div id="shouye" style="display:block">
-   <div class="container" style="margin-top:50px;">
-     <div class="row">
-       <div class="col-sm-12">
-         <div id="background_image">
-           <div id="main_text" class="col-xs-12 col-sm-6" style="float:left">
-             <h1>Coca Cola Great Britain</h1>
-             <p style="line-height:50px;">Coca Cola Great Britain Founded in 1886 Dr John S Pemberton The Coca Cola Company is the world's leading manufacturer, marketer and distributor of non-alcoholic beverage concentrates and syrups, and produces nearly 400 brands.</p>
-           </div>
-		   <div style="float:left">
-		   <img src="assets/images/coca-cola1.jpg" style="width:640px;height:200px;float:right">
-		   </div>
-         </div>
-       </div>
-     </div>
-   </div>
+   <div id="shouye" style="display:block">
+      <div class="container" style="margin-top: 50px;">
+        <div class="row">
+          <div class="col-12">
+            <div id="background_image" style="background-image: url('assets/images/background.jpg'); background-size: cover; background-position: center;">
+              <div id="main_text" class="col-12 col-sm-6" style="float: left;">
+                <h1 class="mb-4">Coca Cola Great Britain</h1>
+                <p class="mb-0">Coca Cola Great Britain Founded in 1886 Dr John S Pemberton The Coca Cola Company is the world's leading manufacturer, marketer and distributor of non-alcoholic beverage concentrates and syrups, and produces nearly 400 brands.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
 
    <!-- Text -->
    <div class="container mt-5">
@@ -124,16 +126,14 @@
    
 </div>  
    
-<div id="shengming" style="display:none">
-
-<div class="jumbotron jumbotron-fluid " style="height:700px;">
-     <div class="container">
-       <h1 class="display-4">Originality Statement</h1>
-       <p class="lead">These web pages are submitted as part requirement for the degree of Computer science at the University of Sussex. They are the product of my own labour except where indicated in the web page content. These web pages or contents may be freely copied and distributed provided the source is acknowledged.</p>
-     </div>
-   </div>
-
-</div>  
+<div id="shengming" style="display:none;">
+  <div class="jumbotron jumbotron-fluid" style="height:700px; font-family: Garamond, serif; margin-top: 50px;">
+    <div class="container">
+      <h1 class="display-4" style="font-weight: bold;">Originality Statement</h1>
+      <p class="lead" style="font-size: 25px; margin-top: 20px;">These web pages are submitted as part requirement for the degree of Computer science at the University of Sussex. They are the product of my own labour except where indicated in the web page content. These web pages or contents may be freely copied and distributed provided the source is acknowledged.</p>
+    </div>
+  </div>
+</div>
 
 
 <div id="kele" style="display:none">
@@ -291,10 +291,8 @@
 </div>
 
 
-
-
    <!-- Footer -->
-   <footer class=" text-light py-4 mt-5" id="dibu" style="background-color:black">
+   <footer class="text-light py-4 mt-5" id="dibu" style="background-color: black;">
      <div class="container">
        <div class="row">
          <div class="col-md-3">
@@ -320,20 +318,21 @@
          <div class="col-md-3">
            <h5>Contact</h5>
            <ul class="list-unstyled">
-             <li><a href="javascript::" data-toggle="modal"  onclick="contact()">Contact</a></li>
+             <li><a href="javascript::" data-toggle="modal" onclick="contact()">Contact</a></li>
            </ul>
          </div>
        </div>
-	   <div class="row">
-	    
-	   </div>
        <div class="row mt-3">
-         <div class="col-md-12">
-           <p class="text-center">&copy; 2023 3D Apps</p><a href="javascript::" onclick="baise()">day</a> <a href="javascript::" onclick="heise()">light</a>
-         </div>
+         <div class="col-md-12 text-center">
+           <p class="mb-0">&copy; 2023 3D Apps</p>
+           <a href="javascript::" onclick="baise()">day</a>
+           <a href="javascript::" onclick="heise()">light</a>
          </div>
        </div>
-  </footer>
+     </div>
+   </footer>
+
+
 <div id="tan1" style="position:fixed;z-index:99999;top:300px;left:30%;display:none">
    <div style="position: relative;margin-right: 20px;margin-bottom: 15px;width: 132px;display: inline-block;border: 1px solid #CCC;background:#EEE;">
    <img src="assets/images/1.png"><a onclick="delImg(this);" style="z-index: 10;display: block;top: -8px;cursor:pointer;left: 620px;position:absolute;width: 20px;height: 20px;background: #CCC;border-radius:100%;text-align:center;line-height: 20px;border: 1px solid #C1C1C1;color: #555;">X</a>
